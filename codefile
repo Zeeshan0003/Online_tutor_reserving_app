@@ -80,3 +80,10 @@ public:
         cout << "Progress tracked for student " << student.getUsername() << endl;
     }
 };
+class SessionRescheduling {
+public:
+    void rescheduleSession(Tutor& tutor, Student& student, string newDateTime) {
+        cout << "Session with tutor " << tutor.getUsername() << " for student " << student.getUsername()
+             << " rescheduled to " << newDateTime << endl;
+    }
+};

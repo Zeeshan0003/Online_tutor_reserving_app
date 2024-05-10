@@ -38,5 +38,21 @@ public:
         availability = avail;
     }
 };
+class Student : public User {
+private:
+    int grade;
+    string subjectsOfInterest;
 
+public:
+    Student(string uname, string pwd, string mail)
+        : User(uname, pwd, mail, "student"), grade(0), subjectsOfInterest("") {}
+
+    void setGrade(int grd) {
+        grade = grd;
+    }
+
+    void setSubjectsOfInterest(string subjects) {
+        subjectsOfInterest = subjects;
+    }
+};
 

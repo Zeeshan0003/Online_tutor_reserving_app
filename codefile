@@ -68,4 +68,9 @@ public:
         cout << "Tutor xyz available for " << subject << endl;
     }
 };
-
+class RealTimeMessagingSystem {
+public:
+    void sendMessage(User& sender, User& receiver, string message) {
+        cout << sender.getUsername() << " sent message to " << receiver.getUsername() << ": " << message << endl;
+    }
+};

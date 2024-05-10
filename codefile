@@ -97,3 +97,9 @@ public:
         cout << "Date and time: " << dateTime << endl;
     }
 };
+class StudentProgressReports {
+public:
+    void generateReport(Student& student) {
+        cout << "Progress report generated for student " << student.getUsername() << endl;
+    }
+};

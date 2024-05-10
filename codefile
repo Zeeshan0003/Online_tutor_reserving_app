@@ -21,5 +21,22 @@ public:
         cout << username << " logged in successfully!" << endl;
     }
 };
+class Tutor : public User {
+private:
+    string qualifications;
+    string availability;
+
+public:
+    Tutor(string uname, string pwd, string mail, string qual, string avail)
+        : User(uname, pwd, mail, "tutor"), qualifications(qual), availability(avail) {}
+
+    void setQualifications(string qual) {
+        qualifications = qual;
+    }
+
+    void setAvailability(string avail) {
+        availability = avail;
+    }
+};
 
 

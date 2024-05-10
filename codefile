@@ -74,3 +74,9 @@ public:
         cout << sender.getUsername() << " sent message to " << receiver.getUsername() << ": " << message << endl;
     }
 };
+class ProgressTracking {
+public:
+    void trackProgress(Student& student) {
+        cout << "Progress tracked for student " << student.getUsername() << endl;
+    }
+};

@@ -109,3 +109,9 @@ public:
         cout << "Access restricted for student " << student.getUsername() << endl;
     }
 };
+class OfflineAccess {
+public:
+    void provideOfflineAccess(User& user) {
+        cout << "Offline access provided to " << user.getUsername() << endl;
+    }
+};

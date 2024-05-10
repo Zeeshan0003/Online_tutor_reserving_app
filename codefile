@@ -1,3 +1,25 @@
 #include <iostream>
 using namespace std;
 
+class User {
+private:
+    string username, password, email, role;
+
+public:
+    User(string u, string p, string e, string r)
+        : username(u), password(p), email(e), role(r) {}
+
+    string getUsername() const {
+        return username;
+    }
+
+    void registerUser() {
+        cout << username << " Tutor registered successfully!" << endl;
+    }
+
+    void loginUser() {
+        cout << username << " logged in successfully!" << endl;
+    }
+};
+
+

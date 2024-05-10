@@ -115,3 +115,9 @@ public:
         cout << "Offline access provided to " << user.getUsername() << endl;
     }
 };
+class NotificationSystem {
+public:
+    void sendNotification(User& user, string message) {
+        cout << "Notification sent to " << user.getUsername() << ": " << message << endl;
+    }
+};

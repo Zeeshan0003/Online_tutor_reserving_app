@@ -103,3 +103,9 @@ public:
         cout << "Progress report generated for student " << student.getUsername() << endl;
     }
 };
+class ParentalControls {
+public:
+    void restrictAccess(Student& student) {
+        cout << "Access restricted for student " << student.getUsername() << endl;
+    }
+};

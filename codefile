@@ -56,3 +56,16 @@ public:
     }
 };
 
+class Tutorfiltr {
+private:
+    string subject;
+
+public:
+    Tutorfiltr(string sub)
+        : subject(sub) {}
+
+    void Display() {
+        cout << "Tutor xyz available for " << subject << endl;
+    }
+};
+
